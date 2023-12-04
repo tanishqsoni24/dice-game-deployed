@@ -1,0 +1,72 @@
+<!-- designing dice game -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 style="color: #962d57; margin: 2rem 0 5rem 0; border-bottom: 2px solid #962d57;">Dice Game</h1>
+    <div class="profiles">
+        <div class="player-1">
+            <div class="profile">
+                <img src="https://t3.ftcdn.net/jpg/03/53/11/00/360_F_353110097_nbpmfn9iHlxef4EDIhXB1tdTD0lcWhG9.jpg" alt="">
+                <h3 class="player-name">Player 1 <img class="edit-image" title="Edit Name" src="https://icon-library.com/images/icon-edit/icon-edit-27.jpg" alt=""></h3>
+                <button class="btn hide">Save</button>
+            </div>
+            <div class="score1">
+                <h3>Score</h3>
+                <div class="dices">
+                    <div class="player-1-dices">
+                        <img src="https://www.media4math.com/sites/default/files/library_asset/images/MathClipArt--Single-Die-with-1-Showing.png" alt="" class="one dice hide">
+                        <img src="https://www.media4math.com/sites/default/files/library_asset/images/MathClipArt--Single-Die-with-2-Showing.png" alt="" class="two dice hide">
+                        <img src="https://www.media4math.com/sites/default/files/library_asset/images/MathClipArt--Single-Die-with-3-Showing.png" alt="" class="three dice hide">
+                        <img src="https://www.media4math.com/sites/default/files/library_asset/images/MathClipArt--Single-Die-with-4-Showing.png" alt="" class="four dice hide">
+                        <img src="https://www.media4math.com/sites/default/files/library_asset/images/MathClipArt--Single-Die-with-5-Showing.png" alt="" class="five dice hide">
+                        <img src="https://www.media4math.com/sites/default/files/library_asset/images/MathClipArt--Single-Die-with-6-Showing.png" alt="" class="six dice hide">
+                    </div>
+                    <div class="player-1-loading">
+                        <h3>Rolling Dice...</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="player-2">
+            <div class="profile">
+                <img src="https://t3.ftcdn.net/jpg/03/53/11/00/360_F_353110097_nbpmfn9iHlxef4EDIhXB1tdTD0lcWhG9.jpg" alt="">
+                <h3 class="player-name">Player 2 <img class="edit-image" title="Edit Name" src="https://icon-library.com/images/icon-edit/icon-edit-27.jpg" alt=""></h3>
+                <button class="btn hide">Save</button>
+            </div>
+            <div class="score2">
+                <h3>Score</h3>
+                <div class="dices">
+                    <div class="player-2-dices">
+                        <img src="https://www.media4math.com/sites/default/files/library_asset/images/MathClipArt--Single-Die-with-1-Showing.png" alt="" class="one dice hide">
+                        <img src="https://www.media4math.com/sites/default/files/library_asset/images/MathClipArt--Single-Die-with-2-Showing.png" alt="" class="two dice hide">
+                        <img src="https://www.media4math.com/sites/default/files/library_asset/images/MathClipArt--Single-Die-with-3-Showing.png" alt="" class="three dice hide">
+                        <img src="https://www.media4math.com/sites/default/files/library_asset/images/MathClipArt--Single-Die-with-4-Showing.png" alt="" class="four dice hide">
+                        <img src="https://www.media4math.com/sites/default/files/library_asset/images/MathClipArt--Single-Die-with-5-Showing.png" alt="" class="five dice hide">
+                        <img src="https://www.media4math.com/sites/default/files/library_asset/images/MathClipArt--Single-Die-with-6-Showing.png" alt="" class="six dice hide">
+                    </div>
+                    <div class="player-2-loading">
+                        <h3>Rolling Dice...</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="button">
+        <button onclick="rollDice()">Roll Dice</button>
+        <button onclick="reload()">New Game</button>
+    </div>
+    <div class="results">
+        <div class="winner">
+            <h3>Winner</h3>
+            <p>Player 1</p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

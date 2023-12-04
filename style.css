@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ffd2e4;
+}
+
+.dice{
+    width: 3rem;
+    margin: 1rem 0.5em 0 0.5rem;
+}
+
+.player-1-loading, .player-2-loading{
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.profiles{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+
+.player-1{
+    display: flex;
+    color: #962d57;
+    flex-wrap: wrap;
+}
+
+.player-2{
+    display: flex;
+    color: #962d57;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.player-1 h3, .player-2 h3{
+    margin-top: 5px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile img{
+    width: 15px;
+}
+
+.edit-image{
+    cursor: pointer;
+}
+
+.profile > img{
+    width: 4vw;
+    border-radius: 50%;
+}
+
+.score1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.score2{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.hide{
+    display: none;
+}
+
+.btn{
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #962d57;
+    cursor: pointer;
+    color: white;
+}
+
+.button{
+    margin-top: 40px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    border: 2px solid #962d57;
+}
+
+.button button{
+    margin: 0 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #962d57;
+    cursor: pointer;
+    color: white;
+    font-size: larger;
+}
+
+.results h3{
+    font-size: x-large;
+    text-align: center;
+}
+
+.results{
+    margin-top: 20px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    border: 2px solid #962d57;
+}
+
+.results p{
+    text-align: center;
+    font-size: xxx-large;
+}
+
+.player-name-input{
+    border: none;
+    text-align: center;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid #962d57;
+    margin: 10px 0;
+}
